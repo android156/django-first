@@ -6,9 +6,16 @@
 </head>
 <body>
 <h1>Заголовок</h1>
-<h3>Мамин хуй</h3>
+<h3>Мамин пес</h3>
 <div class="test_text">
     <p>Это тестовая страница.</p>
+    <div class="test">{{ categories }}</div>
+    <div class="test">{{ products }}</div>
+    <ul>
+    {% for product in products %}
+        <li>{{ product }} {{ product.image }}</li>
+    {% endfor %}
+    </ul>
 </div>
 
 </body>
